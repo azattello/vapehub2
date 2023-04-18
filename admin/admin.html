@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Админ панель</title>
+    <meta name="description" content="Вейпшоп Вейпхаб. Жидкости для электронных сигарет,
+    солевой никотин, электронные сигареты,
+     вейп, атомайзеры, бокс-моды комплектующие."/>
+     <meta name="keywords" content="электронные сигареты цена, 
+электронные сигареты Алматы, 
+электронная сигарета купить, 
+вейпшоп алматы, 
+купить вейп алматы, 
+солевой никотин купить, 
+солевой никотин цена, 
+солевая жидкость купить, 
+жидкость для вейпа, 
+жидкость для электронных сигарет,  
+атомайзер, бокс мод, 
+комплектующие, 
+vapeshop Алматы"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<meta name="theme-color" content="#120808" />    
+
+    
+    <link rel="stylesheet" type="text/css" href="./admin.css" />
+    <link rel="icon" href="../src/favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Ubuntu&display=swap" rel="stylesheet">
+
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="logo">
+        <a href="../../../index.html">
+        <img src="../../../src/logo.png" alt="" class="logo" />
+
+        </a>
+    </div>
+
+      <nav class="nav">
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+         </div>
+        <div class="back back_on">
+            <div class="line__back1"></div>
+            <div class="line__back2"></div>
+        </div>
+    </nav>
+
+    </header>
+    <div class="dropdown__wrapper ">
+      <ul class="dropdown">
+          <a class="dropdown__a a__products" href="#"><li>Редактор товаров</li></a>
+          <a class="dropdown__a a__new_products" href="#"><li>Добавить новый товар</li></a>
+          <a class="dropdown__a a__filter" href="#"><li>Редактор фильтра</li></a>
+          <a class="dropdown__a a__banner" href="#"><li>Редактировать баннер</li></a>
+          <button onclick="signout()" class="signout" id="signout" type="submit">Выйти</button>
+
+      </ul>
+      
+  </div>
+
+    <main class="main">
+      <div class="header__text">
+        Админ панель
+      </div>
+
+      <div class="container">
+        <div class="options editCards">
+      
+          <div class="incontainer edit__cards_container">
+            <!-- <img class="imgProducts"src="./resource/inventory.png" alt=""> -->
+            <p>Список товаров</p>
+          </div>
+          
+          <div class="incontainer edit__cards_container2">
+            <!-- <img class="imgProducts"src="./resource/add-to-basket.png" alt=""> -->
+            <p>Добавить товар</p>
+          </div>
+
+        </div>
+        <div class="options editFilter">
+          <div class="incontainer edit__filter_container">
+            <!-- <img class="imgProducts"src="./resource/inventory.png" alt=""> -->
+            <p>Редактировать, посмотреть фильтр</p>
+          </div>
+        </div>
+
+        <div class="options editBaner">
+          <div class="incontainer edit__banner_container">
+            <!-- <img class="imgProducts"src="./resource/inventory.png" alt=""> -->
+            <p>Редактировать баннер</p>
+          </div>
+        </div>
+
+
+      </div>
+      
+
+    </main>
+
+
+    <script src="./admin.js"></script>
+    <script src="./adminMenu.js"></script>
+  </body>
+
+</html>

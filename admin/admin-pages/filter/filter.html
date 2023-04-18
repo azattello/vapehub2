@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Редактор фильтра</title>
+    <meta name="description" content="Вейпшоп Вейпхаб. Жидкости для электронных сигарет,
+    солевой никотин, электронные сигареты,
+     вейп, атомайзеры, бокс-моды комплектующие."/>
+     <meta name="keywords" content="электронные сигареты цена, 
+электронные сигареты Алматы, 
+электронная сигарета купить, 
+вейпшоп алматы, 
+купить вейп алматы, 
+солевой никотин купить, 
+солевой никотин цена, 
+солевая жидкость купить, 
+жидкость для вейпа, 
+жидкость для электронных сигарет,  
+атомайзер, бокс мод, 
+комплектующие, 
+vapeshop Алматы"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<meta name="theme-color" content="#120808" />    
+
+    
+    <link rel="stylesheet" type="text/css" href="./filter.css" />
+    <link rel="icon" href="../../../src/favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Ubuntu&display=swap" rel="stylesheet">
+
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="logo">
+        <a href="../../../index.html">
+        <img src="../../../src/logo.png" alt="" class="logo" />
+
+        </a>
+    </div>
+
+      <nav class="nav">
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+         </div>
+        <div class="back back_on">
+            <div class="line__back1"></div>
+            <div class="line__back2"></div>
+        </div>
+    </nav>
+
+    </header>
+    <div class="dropdown__wrapper ">
+      <ul class="dropdown">
+        <a class="dropdown__a a__panel" href="#"><li>Панель администратора</li></a>
+        <a class="dropdown__a a__products" href="#"><li>Редактор товаров</li></a>
+        <a class="dropdown__a a__products2" href="#"><li>Добавить новый товар</li></a>
+        <a class="dropdown__a a__banner" href="#"><li>Редактировать баннер</li></a>
+          <button onclick="signout()" class="signout" id="signout" type="submit">Выйти</button>
+
+      </ul>
+      
+  </div>
+
+    <main class="main">
+      <form class="form disable" id="loginForm">
+        <div class="Title__container">
+          <label class="send__label label__title" for="title" >Название фильтра</label>
+          <div class="input__container">
+            <input class="send__input input__title" type="text" id="title"  name="title"   required>
+          </div>
+        </div>
+        <!-- value="Крепость" -->
+        <!-- value="0мг, 3мг, 6мг, 9мг, 12мг, 20мг, 40мг, 50мг, 60мг"  -->
+        <div class="description__container">
+          <label class="send__label label__description" for="description">Теги<span> через запятую(тег1, тег2, тег3)</span></label>
+          <div class="input__container">
+            <input class="send__input input__option" type="text" id="option" name="description" required>
+          </div>
+        </div>
+
+          <button class="button__submit" id="button_submit" type="button">Добавить</button>
+          <button class="button__change buttonOff" id="button_submit" type="button">Изменить</button>
+      </form>
+
+      <div class="filter__wrapper">
+          <!-- <div class="category">
+            <div class="category__title">Крепость</div>
+            <div class="category__options">
+                <div class="option">0мг</div>
+                <div class="option">3мг</div>
+                <div class="option">6мг</div>
+                <div class="option">9мг</div>
+                <div class="option">12мг</div>
+                <div class="option">20мг</div>
+                <div class="option">40мг</div>
+                <div class="option">50мг</div>
+                <div class="option">60мг</div>
+            </div>
+        </div> -->
+
+        
+        
+      </div>
+
+    </main>
+
+
+    <script src="./filterEditer.js" type="module"></script>
+    <script src="./base.js"></script>
+    
+  </body>
+
+</html>

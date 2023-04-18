@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Редактор баннера</title>
+        <meta
+            name="description"
+            content="Вейпшоп Вейпхаб. Жидкости для электронных сигарет,
+    солевой никотин, электронные сигареты,
+     вейп, атомайзеры, бокс-моды комплектующие."
+        />
+        <meta
+            name="keywords"
+            content="электронные сигареты цена, 
+электронные сигареты Алматы, 
+электронная сигарета купить, 
+вейпшоп алматы, 
+купить вейп алматы, 
+солевой никотин купить, 
+солевой никотин цена, 
+солевая жидкость купить, 
+жидкость для вейпа, 
+жидкость для электронных сигарет,  
+атомайзер, бокс мод, 
+комплектующие, 
+vapeshop Алматы"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        />
+        <meta name="theme-color" content="#120808" />
+
+        <link rel="stylesheet" type="text/css" href="./banner.css" />
+        <link rel="icon" href="../../../src/favicon.ico" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Ubuntu&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="body">
+        <header class="header">
+            <div class="logo">
+                <a href="../../../index.html">
+                <img src="../../../src/logo.png" alt="" class="logo" />
+
+                </a>
+            </div>
+
+            <nav class="nav">
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <div class="back back_on">
+                    <div class="line__back1"></div>
+                    <div class="line__back2"></div>
+                </div>
+            </nav>
+        </header>
+        <div class="dropdown__wrapper">
+            <ul class="dropdown">
+                <a class="dropdown__a a__panel" href="#"
+                    ><li>Панель администратора</li></a
+                >
+                <a class="dropdown__a a__products" href="#"
+                    ><li>Редактор товаров</li></a
+                >
+                <a class="dropdown__a a__products2" href="#"
+                    ><li>Добавить новый товар</li></a
+                >
+                <a class="dropdown__a a__filter" href="#"
+                    ><li>Редактор фильтра</li></a
+                >
+
+                <button
+                    onclick="signout()"
+                    class="signout"
+                    id="signout"
+                    type="submit"
+                >
+                    Выйти
+                </button>
+            </ul>
+        </div>
+
+        <main class="main">
+            <div class="container__main">
+                <label class="label__title" for="title">Заглавление</label>
+                <div class="row1">
+                    <input
+                        class="banner__text"
+                        type="text"
+                        id="banner__text"
+                        name="title"
+                        required
+                    />
+                </div>
+
+                <label class="label__description" for="description"
+                    >Описание</label
+                >
+                <div class="row2">
+                    <input
+                        class="banner__text"
+                        type="text"
+                        id="banner__desc"
+                        name="description"
+                        required
+                    />
+                </div>
+                <label class="label__link" for="link"
+                >Ссылка на изображение</label
+            >
+                <div class="row3">
+                    
+                    <input
+                        class="link__img"
+                        type="url"
+                        id="link__img"
+                        name="link"
+                        required/>
+                <button class="button__link" type="submit">confirm</button>
+
+                    
+                </div>
+                <div class="section">
+
+                </div>
+
+                <button class="button__send" type="submit">Send</button>
+
+            </div>
+
+            
+
+        </main>
+
+        <script src="./banner.js"></script>
+        <script src="./bannerEditor.js" type="module"></script>
+    </body>
+</html>

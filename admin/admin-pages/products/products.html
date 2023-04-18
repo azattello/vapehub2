@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Список товаров</title>
+        <meta
+            name="description"
+            content="Вейпшоп Вейпхаб. Жидкости для электронных сигарет,
+    солевой никотин, электронные сигареты,
+     вейп, атомайзеры, бокс-моды комплектующие."
+        />
+        <meta
+            name="keywords"
+            content="электронные сигареты цена, 
+электронные сигареты Алматы, 
+электронная сигарета купить, 
+вейпшоп алматы, 
+купить вейп алматы, 
+солевой никотин купить, 
+солевой никотин цена, 
+солевая жидкость купить, 
+жидкость для вейпа, 
+жидкость для электронных сигарет,  
+атомайзер, бокс мод, 
+комплектующие, 
+vapeshop Алматы"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        />
+        <meta name="theme-color" content="#120808" />
+        <!-- 405591 -->
+
+        <link rel="stylesheet" type="text/css" href="./products.css" />
+        <link rel="icon" href="../../../src/favicon.ico" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Ubuntu&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="body">
+        <header class="header">
+            <div class="logo">
+                <a href="../../../index.html">
+                    <img src="../../../src/logo.png" alt="" class="logo" />
+                </a>
+            </div>
+
+            <nav class="nav">
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <div class="back back_on">
+                    <div class="line__back1"></div>
+                    <div class="line__back2"></div>
+                </div>
+            </nav>
+        </header>
+        <div class="dropdown__wrapper">
+            <ul class="dropdown">
+                <a class="dropdown__a a__panel" href="#"
+                    ><li>Панель администратора</li></a
+                >
+                <a class="dropdown__a a__filter" href="#"
+                    ><li>Редактор фильтра</li></a
+                >
+                <a class="dropdown__a a__banner" href="#"
+                    ><li>Редактировать баннер</li></a
+                >
+                <button
+                    onclick="signout()"
+                    class="signout"
+                    id="signout"
+                    type="submit"
+                >
+                    Выйти
+                </button>
+            </ul>
+        </div>
+
+        <main class="main">
+            <div class="panel">
+                <div class="search">
+                    <form class="search__form">
+                        <input
+                            class="search__input"
+                            type="text"
+                            id="search__input"
+                            placeholder="Искать здесь..."
+                        />
+                    </form>
+                    <button class="search__button" type="submit">
+                        <img
+                            src="../../../src/search.png"
+                            alt=""
+                            class="search__img"
+                        />
+                    </button>
+                </div>
+            </div>
+
+            <div class="container">
+                <button class="button__add" id="button__add" type="submit">
+                    Добавить новый товар
+                </button>
+
+                <form class="form disable" id="loginForm">
+                    <!-- <form class="form" id="loginForm"> -->
+                    <div class="Title__container">
+                        <label class="send__label label__title" for="title"
+                            >Название товара</label
+                        >
+                        <div>
+                            <input
+                                class="send__input input__title"
+                                type="text"
+                                id="title"
+                                name="title"
+                                required
+                            />
+                        </div>
+                    </div>
+
+                    <div class="description__container">
+                        <label
+                            class="send__label label__description"
+                            for="description"
+                            >Описание товара</label
+                        >
+                        <div>
+                            <textarea
+                                class="send__input input__description"
+                                type="text"
+                                id="description"
+                                name="description"
+                                required
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <div class="price__container">
+                        <label class="send__label label__price" for="price"
+                            >Цена ₸</label
+                        >
+                        <div>
+                            <input
+                                class="send__input input__price"
+                                type="number"
+                                id="price"
+                                name="price"
+                                required
+                            />
+                        </div>
+                    </div>
+
+                    <div class="link__container">
+                        <label class="send__label label__link" for="link"
+                            >Ссылка на изображение (1х1)</label
+                        >
+                        <div class="input__link_container">
+                            <input
+                                class="send__input input__link"
+                                type="url"
+                                id="link"
+                                name="link"
+                                required
+                            />
+                        </div>
+                        <div class="button__link" type="submit">check link</div>
+                    </div>
+
+                    <div class="check__link"></div>
+
+                    <div class="title__filter">Фильтр теги</div>
+                    <div class="filter__container">
+                        <!-- <label class="send__label label__filter" for="filter">Фильтр теги</label>
+            <div>
+              <input class="send__input input__filter" type="text" id="filter" name="filter" required>
+            </div> -->
+                    </div>
+
+                    <button
+                        class="button__submit"
+                        id="button_submit"
+                        type="button"
+                    >
+                        Сохранить
+                    </button>
+                </form>
+
+                <button
+                    class="button__add_2 disable"
+                    id="button__add"
+                    type="submit"
+                >
+                    Добавить новый товар
+                </button>
+
+                <form class="form__2 disable" id="loginForm">
+                    <div class="Title__container">
+                        <label class="send__label label__title" for="title"
+                            >Название товара</label
+                        >
+                        <div>
+                            <input
+                                class="send__input input__title"
+                                type="text"
+                                id="title2"
+                                name="title"
+                                required
+                            />
+                        </div>
+                    </div>
+
+                    <div class="description__container">
+                        <label
+                            class="send__label label__description"
+                            for="description"
+                            >Описание товара</label
+                        >
+                        <div>
+                            <textarea
+                                class="send__input input__description"
+                                type="text"
+                                id="description2"
+                                name="description"
+                                required
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <div class="price__container">
+                        <label class="send__label label__price" for="price"
+                            >Цена ₸</label
+                        >
+                        <div>
+                            <input
+                                class="send__input input__price"
+                                type="number"
+                                id="price2"
+                                name="price"
+                                required
+                            />
+                        </div>
+                    </div>
+
+                    <div class="link__container2">
+                        <label class="send__label label__link" for="link"
+                            >Ссылка на изображение (1х1)</label
+                        >
+                        <div class="input__link_container2">
+                            <input
+                                class="send__input input__link2"
+                                type="url"
+                                id="link2"
+                                name="link"
+                                required
+                            />
+                        </div>
+                        <div class="button__link2" type="submit">check link</div>
+                    </div>
+
+                    <div class="check__link2"></div>
+
+                    <div class="title__filter">Фильтр теги</div>
+
+                    <div class="filter__container2">
+                        <!-- <label class="send__label label__filter" for="filter">Фильтр теги</label>
+            <div>
+              <input class="send__input input__filter" type="text" id="filter" name="filter" required>
+            </div> -->
+                    </div>
+
+                    <button
+                        class="button__submit_2"
+                        id="button_submit_2"
+                        type="button"
+                    >
+                        Сохранить
+                    </button>
+                </form>
+
+                <div class="container__table">
+                    <!-- <div class="table__title">
+            <p>№</p><p>Название</p><p>Описание</p><p>Цена</p><p>Настройки</p>
+          </div> -->
+
+                    <div class="table__list">
+                        <div class="products">
+                            <table>
+                                <thead>
+                                    <tr class="trhead">
+                                        <th colspan="1">№</th>
+                                        <th colspan="1">Название</th>
+                                        <th colspan="1">Описание</th>
+                                        <th colspan="1">Цена</th>
+                                        <th colspan="1">*</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody"></tbody>
+                            </table>
+
+                            <!-- <div class="product">
+                <p>1</p>
+                <p>Elfbar 2000</p>
+                <p>Watermelon lemon</p>
+  
+                <button class="change">Изменить</button>
+              </div> -->
+
+                            <!-- append товары из базы данных  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="./products.js" type="module"></script>
+        <script src="./base.js"></script>
+        <script src="./search.js"></script>
+    </body>
+</html>
